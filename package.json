@@ -1,0 +1,19 @@
+{
+  "name": "cursobootstrap",
+  "version": "1.0.0",
+  "description": "Proyecto de nodejs",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franzelunico/cursoBootstrap.git"
+  },
+  "author": "Franz A. Lopez Choque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franzelunico/cursoBootstrap/issues"
+  },
+  "homepage": "https://github.com/franzelunico/cursoBootstrap#readme"
+}
