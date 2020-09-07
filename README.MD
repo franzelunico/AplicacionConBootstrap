@@ -1,6 +1,6 @@
 Curso de Bootstrap 4.0
 
-SEMANA1
+SEMANA 2
 
 Tutor:Ezequiel Lamónica
 
