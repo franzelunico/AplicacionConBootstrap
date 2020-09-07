@@ -41,28 +41,50 @@
                 <li class="breadcrumb-item" aria-current="page">Contacto</li>
             </ol>
         </nav>
-        <span>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam consequuntur sed totam laborum, culpa, animi dolore
-            molestias voluptatem numquam modi autem quam dignissimos provident rerum, odio consectetur nobis sit? Maiores doloribus
-            quaerat quam labore commodi repellat veniam? Maxime animi dignissimos fuga, culpa repellat enim eos blanditiis soluta
-            excepturi quam dolores doloremque debitis distinctio error voluptatum dolorum id commodi? Excepturi doloremque aliquam
-            sint deleniti exercitationem optio, aut illo, praesentium ad eum tenetur, asperiores magni modi nulla accusantium
-            corrupti? Totam ea quo, alias ipsam, quas voluptas nam quasi, praesentium quis rerum maxime non dolor optio aperiam
-            culpa vero dolores porro saepe reprehenderit ex velit! Quibusdam reprehenderit pariatur vitae perferendis incidunt
-            autem? Quaerat possimus, laudantium earum, fugit mollitia ea rem aperiam quidem reiciendis repellat voluptas vero atque?
-            Ad omnis cumque vitae nemo labore officia unde, placeat magnam aliquid veritatis iure atque ex totam quia facere, eum,
-            amet laboriosam itaque veniam magni rerum inventore soluta libero sequi! Quisquam perferendis nemo omnis, accusantium
-            error maiores eos porro cumque dolore soluta laborum. Quae similique tempora unde repudiandae, dignissimos praesentium
-            sed ab dicta autem aspernatur tenetur accusantium saepe eos placeat doloremque amet dolore! Eius ut nisi consectetur
-            dolorem. Repellat consequatur provident ut dolorem placeat fuga molestias accusamus qui obcaecati aut atque nesciunt
-            dolor autem magni perferendis ipsa illo facilis quod modi, magnam voluptatem laboriosam non. Necessitatibus nesciunt
-            laboriosam recusandae pariatur deleniti, animi quasi voluptas voluptatem veritatis soluta. Minus laudantium nihil
-            molestiae. Laboriosam quaerat est nobis, laborum in aliquid maxime corrupti magni inventore nemo impedit commodi, ad
-            quas nulla dolorem dolor vero rem. Quibusdam sapiente tempore officia asperiores culpa doloremque magnam, corporis hic
-            possimus error, vel excepturi praesentium eveniet. Sapiente cumque harum excepturi unde hic dicta nihil architecto esse
-            dolorum pariatur molestias, perferendis corporis totam non debitis. Fugiat veniam inventore recusandae amet animi sequi
-            maiores iure. Nam, esse.
-        </span>
+        <h1>Dejame tu comentario</h1>
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingrese su apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese su email">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-sm-9">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="domicilio" placeholder="Ingrese su domicilio">
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="provincia">Provincia</label>
+                    <select id="provincia" class="form-control">
+                        <option selected>Cochabamba</option>
+                        <option>La paz</option>
+                        <option>Santa cruz</option>
+                        <option>Tarija</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentario</label>
+                <textarea id="comentario" class="form-control" rows="10"></textarea>  
+            </div>
+            <div class="form-grup">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Quiero que me contacten</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary"> Enviar</button>
+        </form>
+          
     </div>
 
     <footer>
