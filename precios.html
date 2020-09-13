@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">  
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
 
     <title>Guia de Hoteles </title>
 </head>
@@ -41,80 +41,114 @@
                 <li class="breadcrumb-item active" aria-current="page">Precios</li>
             </ol>
         </nav>
-        <div class="table-responsive">
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                    <th>Calidad</th>
-                    <th>Gran Hotel Cochabamba</th>
-                    <th>Hotel Galarze</th>
-                    <th>Hotel Pairumani</th>
-                    <th>Hotel Boutique La Casa de Margarita</th>
-                    <th>Hotel Boutique Casamagna</th>
-                    <th>Armenia Hotel</th>
-                    <th>Hotel Regina</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>BOB 781</td>
-                        <td>BOB 211</td>
-                        <td>BOB 211</td>
-                        <td>BOB 411</td>
-                        <td>BOB 285</td>
-                        <td>BOB 180</td>
-                        <td>BOB 256</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>BOB 681</td>
-                        <td>BOB 111</td>
-                        <td>BOB 111</td>
-                        <td>BOB 311</td>
-                        <td>BOB 185</td>
-                        <td>BOB 100</td>
-                        <td>BOB 200</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                            <span class="oi oi-star"></span>
-                        </td>
-                        <td>BOB 581</td>
-                        <td>BOB 90</td>
-                        <td>BOB 100</td>
-                        <td>BOB 280</td>
-                        <td>BOB 150</td>
-                        <td>BOB 90</td>
-                        <td>BOB 180</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="d-flex justify-content-center">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header" style="background-color: blue;">
-                    Tarjetas aceptadas
+        <!-- Cabezera de los los TABS -->
+        <ul class="nav nav-pills" id="myTab" role="tablist">
+            <li clas="nav-item">
+                <a class="nav-link active" id="compara-tab" data-toggle="pill" href="#compara" role="tab"
+                    aria-controls="compara" aria-selected="true">
+                    Compara
+                </a>
+            </li>
+            <li clas="nav-item">
+                <a class="nav-link" id="tarjetas-tab" data-toggle="pill" href="#tarjetas" role="tab"
+                    aria-controls="tarjetas" aria-selected="false">
+                    Tarjetas
+                </a>
+            </li>
+            <li clas="nav-item">
+                <a class="nav-link" id="comentarios-tab" data-toggle="pill" href="#comentarios" role="tab"
+                    aria-controls="comentarios" aria-selected="false">
+                    Tarjetas
+                </a>
+            </li>
+        </ul>
+        
+        <!-- Contenido de los los TABS -->
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <th>Calidad</th>
+                            <th>Gran Hotel Cochabamba</th>
+                            <th>Hotel Galarze</th>
+                            <th>Hotel Pairumani</th>
+                            <th>Hotel Boutique La Casa de Margarita</th>
+                            <th>Hotel Boutique Casamagna</th>
+                            <th>Armenia Hotel</th>
+                            <th>Hotel Regina</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>BOB 781</td>
+                                <td>BOB 211</td>
+                                <td>BOB 211</td>
+                                <td>BOB 411</td>
+                                <td>BOB 285</td>
+                                <td>BOB 180</td>
+                                <td>BOB 256</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>BOB 681</td>
+                                <td>BOB 111</td>
+                                <td>BOB 111</td>
+                                <td>BOB 311</td>
+                                <td>BOB 185</td>
+                                <td>BOB 100</td>
+                                <td>BOB 200</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                    <span class="oi oi-star"></span>
+                                </td>
+                                <td>BOB 581</td>
+                                <td>BOB 90</td>
+                                <td>BOB 100</td>
+                                <td>BOB 280</td>
+                                <td>BOB 150</td>
+                                <td>BOB 90</td>
+                                <td>BOB 180</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Tarjeta Basica</li>
-                    <li class="list-group-item">Tarjeta VIP</li>
-                    <li class="list-group-item">Tarjeta Back</li>
-                </ul>
+            </div>
+            <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+                <div class="d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header" style="background-color: blue;">
+                            Tarjetas aceptadas
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Tarjeta Basica</li>
+                            <li class="list-group-item">Tarjeta VIP</li>
+                            <li class="list-group-item">Tarjeta Back</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios
             </div>
         </div>
+
     </div>
+
 
     <footer>
         <div class="row">

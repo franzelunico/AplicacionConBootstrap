@@ -43,3 +43,7 @@ footer {
         column-count: 4;
     }
 }
+
+.tab-content{
+    padding-top: 10px;
+}
