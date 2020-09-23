@@ -202,7 +202,7 @@
             <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
                 <img class="card-img-top" src="images/hotel7.webp" alt="Imagen del hotel">
                 <div class="card-body">
-                    <h5 class="card-title">Hotel Regina</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de salsa gratis!">Hotel Regina</h5>
                     <h6 class="card-subtitle text-muted">Cochabamba</h6>
                     <p class="card-text">
                         El Hotel Regina está situado en el centro de Cochabamba, a 2 manzanas de la histórica plaza de
@@ -272,6 +272,12 @@
     <script src="./node_modules/jquery/jquery.min.js"></script>
     <script src="./node_modules/popper.js/dist/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        $(function(){
+            $("[data-toogle='tooltip']").tooltip();
+        });
+    </script>
 
 </body>
 
