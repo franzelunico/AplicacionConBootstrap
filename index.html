@@ -215,6 +215,32 @@
                 </div>
             </div>
         </div>
+
+        <!--Modal para mensajes-->
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Suscripcion para descuentos</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Cuando existan descuentos se el primero en enterarte.</label><br>
+                                <label for="recipient-name" class="col-form-label">Tu email:</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success">Enviar</button>
+                    </div>
+                </div>
+            </div>
+        </div><!--Fin Modal para mensajes-->
     </div>
 
     <footer>
@@ -231,6 +257,7 @@
                     <p><span class="oi oi-home footer-addres-icon"></span>Cochabamba-Bolivia</p>
                     <p><span class="oi oi-phone footer-addres-icon"></span> +591 69504113</p>
                     <p><span class="oi oi-inbox footer-addres-icon"></span>franzlopezsrl@gmail.com</p>
+                    <button type="button" class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Suscripcion</button>
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">
