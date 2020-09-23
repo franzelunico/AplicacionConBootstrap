@@ -58,13 +58,14 @@
             <li clas="nav-item">
                 <a class="nav-link" id="comentarios-tab" data-toggle="pill" href="#comentarios" role="tab"
                     aria-controls="comentarios" aria-selected="false">
-                    Tarjetas
+                    Comentarios
                 </a>
             </li>
         </ul>
         
         <!-- Contenido de los los TABS -->
         <div class="tab-content" id="myTabContent">
+            <!-- Tabla de comparacion -->
             <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
                 <div class="table-responsive">
                     <table class="table table-striped">
@@ -127,25 +128,72 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+            </div> <!-- Tabla de comparacion -->
+
             <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-                <div class="d-flex justify-content-center">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-header" style="background-color: blue;">
-                            Tarjetas aceptadas
+                <div class="accordion" id="accordionTarjetas">
+                    <!-- Tajetas Basica-->
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true"  aria-controls="collapseBasica">Tarjeta Basica</button>
+                            </h5>
                         </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Tarjeta Basica</li>
-                            <li class="list-group-item">Tarjeta VIP</li>
-                            <li class="list-group-item">Tarjeta Back</li>
-                        </ul>
-                    </div>
+                        <div class="collapse" id="collapseBasica" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Podes reservar en 3 cuotas sin interes
+                            </div>
+                        </div>
+                    </div><!-- Fin de Tajetas Basica-->
+
+                    <!-- Tajetas VIP-->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                        data-target="#collapseVip" aria-expanded="false"
+                                        aria-controls="collapseVip">
+                                        Tarjeta VIP
+                                </button>
+                            </h5>
+                        </div>
+                        <div class="collapse" id="collapseVip" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Puedes reservar en 6 cuotas sin interes.
+                                Al llegar, recibirás una canasta de obsequios para disfrutar con tu familia.
+                            </div>
+                        </div>
+                    </div><!-- Fin de Tajetas VIP-->
+
+                    <!-- Tarjeta Black-->
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapseBlack" aria-expanded="false"
+                                        aria-controls="collapseBlack">
+                                        Tarjeta Black
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div class="collapse show" id="collapseBlack" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                            <div class="card-body">
+                                Puedes reservar en 12 cuotas sin interes. <br>
+                                Al llegar recibiras una canasta de obsequios para disfrutar con tu familia
+                                y un acceso al gimnacio/spa todos los dias de tu vacacion.
+                            </div>
+
+                        </div>
+                    </div> <!-- Fin de Tarjeta Black-->
+
                 </div>
             </div>
 
-            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios
+            <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+                Comentarios
             </div>
-        </div>
+        </div> <!-- Fin de los los TABS -->
 
     </div>
 
