@@ -211,7 +211,7 @@
                     <p class="card-text">Telefono: 4-123456</p>
                 </div>
                 <div>
-                    <button type="button" class="btn btn-primary btn-reserva">Reservar</button>
+                    <button type="button" class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consulta la promociones vigentes">Reservar</button>
                 </div>
             </div>
         </div>
@@ -270,12 +270,13 @@
     </footer>
     <!--Java script-->
     <script src="./node_modules/jquery/jquery.min.js"></script>
-    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script>
         $(function(){
-            $("[data-toogle='tooltip']").tooltip();
+            $('[data-toogle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
         });
     </script>
 
