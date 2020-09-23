@@ -40,26 +40,62 @@
                 <li class="breadcrumb-item active" aria-current="page"><a href="./index.html"></a> Inicio</li>
             </ol>
         </nav>
+
+       
         <div class="row">
-            <div class="col-12 col-sm-7  col-md-4" style="border-color:red;border-style: groove;">
-                <p>
-                <h4>¿Como funciona?</h4>
-                <p>Busca un hotel acorde a tu preferencia, al finalizar tu estadia puedes dar un calificacion</p>
-                </p>
-            </div>
-            <div class="col-12 col-sm-5  col-md-4" style="border-color:black;border-style: groove;">
-                <p>
-                <h4>¿Donde puede reservar?</h4>
-                <p>Puedes realizar tu reservar desde la pagina y verificando al numero del hotel</p>
-                </p>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4" style="border-color:blue;border-style: groove;">
-                <p>
-                <h4>¿Como puedo pagar?</h4>
-                <p>Puedes hacerlo con tu tarje, nosotros trabajamos con el Banco Union, BNB y Bisa</p>
-                </p>
+             <!-- Cabezera de Collapse-->
+            <div class="col-12 col-md-4 col-lg-3">
+                <div class="row">
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#funciona" aria-expanded="false"
+                                aria-controls="multiCollapse1">
+                                ¿Como funciona?
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#reserva" aria-expanded="false"
+                                aria-controls="multiCollapse2">
+                                ¿Donde puede reservar?
+                        </button>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                data-target="#pago" aria-expanded="false"
+                                aria-controls="multiCollapse3">
+                                ¿Como puedo pagar?
+                        </button>
+                    </div>
+                </div>
+            </div><!-- Fin de Cabezera de Collapse-->
+
+            <!-- Cuerpo de Collapse-->
+            <div class="col-12 col-md-8 col-lg-9">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 collapse multi-collapse" id="funciona" style="border-color:red;border-style: groove;">
+                        <p>
+                        <h4>¿Como funciona?</h4>
+                        <p>Busca un hotel acorde a tu preferencia, al finalizar tu estadia puedes dar un calificacion</p>
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4 collapse multi-collapse" id="reserva" style="border-color:black;border-style: groove;">
+                        <p>
+                        <h4>¿Donde puede reservar?</h4>
+                        <p>Puedes realizar tu reservar desde la pagina y verificando al numero del hotel</p>
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 collapse multi-collapse" id="pago" style="border-color:blue;border-style: groove;">
+                        <p>
+                        <h4>¿Como puedo pagar?</h4>
+                        <p>Puedes hacerlo con tu tarje, nosotros trabajamos con el Banco Union, BNB y Bisa</p>
+                        </p>
+                    </div>
+                </div><!--Fin Cuerpo de Collapse-->
             </div>
         </div>
+
+
 
         <div class="row">
             <div class="col">
