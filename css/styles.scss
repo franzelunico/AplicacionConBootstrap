@@ -1,0 +1,52 @@
+/* Variables */
+$green: #c4fad0;
+
+.jumbotron{
+    background-color: $green;
+    color: black;
+    margin-top: 56px;
+}
+
+footer {
+    padding: 10px 10px 0px 10px;
+    background-color: $green;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.card-hotel{
+    flex: 1 250px;
+    margin-top: 10px;
+}
+.btn-reserva {
+    width: 100%;
+}
+
+.footer-addres-icon{
+    padding-right: 10px;
+}
+
+/* md */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-columns {
+        column-count: 3;
+    }
+
+}
+
+/* lg */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+/* xl */
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+.tab-content{
+    padding-top: 10px;
+}
