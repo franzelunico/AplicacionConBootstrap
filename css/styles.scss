@@ -1,29 +1,56 @@
 /* Variables */
-$green: #c4fad0;
+$amarillo: yellow;
+$rojo: red;
+$verde: #c4fad0;
+
+/* mixin de márgenes, padding y colores */
+@mixin margenes($top) {
+    margin-top: $top;
+}
+
+@mixin paddings($top, $right, $bottom, $left) {
+    padding: $top $right $bottom $left;
+}
+
+@mixin colores($color, $estilo){
+    background-color: $color;
+    border-style: groove;
+}
 
 .jumbotron{
-    background-color: $green;
+    background-color: $verde;
     color: black;
-    margin-top: 56px;
+    @include margenes(56px);
 }
 
 footer {
-    padding: 10px 10px 0px 10px;
-    background-color: $green;
+    @include paddings(10px, 10px, 0px, 10px);
+    background-color: $verde;
     margin-bottom: 0px;
-    margin-top: 10px;
+    @include margenes(10px);
 }
 .card-hotel{
     flex: 1 250px;
-    margin-top: 10px;
+    @include margenes(10px);
 }
 .btn-reserva {
     width: 100%;
 }
 
 .footer-addres-icon{
-    padding-right: 10px;
+    @include paddings(0px, 10px, 0px, 0px);
 }
+
+#funciona{
+    @include colores($amarillo, groove);
+}
+#reserva{
+    @include colores($rojo, groove);
+}
+#pago{
+    @include colores($verde, groove);
+}
+
 
 /* md */
 @media (min-width: 768px) and (max-width: 991.98px) {

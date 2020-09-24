@@ -1,4 +1,6 @@
+@charset "UTF-8";
 /* Variables */
+/* mixin de márgenes, padding y colores */
 .jumbotron {
   background-color: #c4fad0;
   color: black;
@@ -18,7 +20,19 @@ footer {
   width: 100%; }
 
 .footer-addres-icon {
-  padding-right: 10px; }
+  padding: 0px 10px 0px 0px; }
+
+#funciona {
+  background-color: yellow;
+  border-style: groove; }
+
+#reserva {
+  background-color: red;
+  border-style: groove; }
+
+#pago {
+  background-color: #c4fad0;
+  border-style: groove; }
 
 /* md */
 @media (min-width: 768px) and (max-width: 991.98px) {
