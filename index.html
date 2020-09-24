@@ -244,7 +244,7 @@
         </div><!--Fin de la Lista de Hoteles-->
 
         <!--Modal para mensajes-->
-        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="suscripcion" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -284,7 +284,7 @@
                     <p><span class="oi oi-home footer-addres-icon"></span>Cochabamba-Bolivia</p>
                     <p><span class="oi oi-phone footer-addres-icon"></span> +591 69504113</p>
                     <p><span class="oi oi-inbox footer-addres-icon"></span>franzlopezsrl@gmail.com</p>
-                    <button type="button" class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#contacto">Suscripcion</button>
+                    <button id="suscripcionBtn" type="button" class="btn btn-outline-success btn-reserva" data-toggle="modal" data-target="#suscripcion">Suscripcion</button>
                 </address>
             </div>
             <div class="col-sm-4 d-flex flex-column align-items-end">
@@ -311,23 +311,22 @@
 
 
             // Operaciones en el modal
-            $("#contacto").on('modal.fade.show', function (e) {
-                console.log('el modal se está mostrando');
+            $("#suscripcion").on('show.bs.modal', function (e) {
+                console.log('el modal de suscripcion se esta mostrando');
+                $('#suscripcionBtn').removeClass('btn-outline-success');
+                $('#suscripcionBtn').addClass('btn-primary');
+                $('#suscripcionBtn').prop('disabled',true);
+            });
 
-                $("#contactoBtn").removeClass('btn-outline-success');
-                $("#contactoBtn").addClass('btn-primary');
-                $("#contactoBtn").prop('disabled', true);
+            $("#suscripcion").on('shown.bs.modal', function (e) {
+                console.log('se mostro el modal de suscripcion');
+            });
 
+            $("#suscripcion").on('hide.bs.modal', function (e) {
+                console.log('el modal de suscripcion se esta oculta');
             });
-            $("#contacto").on('shown.bs.modal', function (e) {
-                console.log('el modal se mostró');
-            });
-            $("#contacto").on('hide.bs.modal', function (e) {
-                console.log('el modal se está ocultando');
-            });
-            $("#contacto").on('hidden.bs.modal', function (e) {
-                console.log('el modal se ocultó');
-                $("#contactoBtn").prop('disabled', false);
+            $("#suscripcion").on('hidden.bs.modal', function (e) {
+                console.log('el modal de suscripcion se oculto');
             });
 
 
