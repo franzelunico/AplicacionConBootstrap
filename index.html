@@ -308,9 +308,7 @@
                 interval: 7000
             });
 
-
-
-            // Operaciones en el modal
+            // Operaciones en el modal (suscripcion a callbacks)
             $("#suscripcion").on('show.bs.modal', function (e) {
                 console.log('el modal de suscripcion se esta mostrando');
                 $('#suscripcionBtn').removeClass('btn-outline-success');
@@ -327,8 +325,10 @@
             });
             $("#suscripcion").on('hidden.bs.modal', function (e) {
                 console.log('el modal de suscripcion se oculto');
+                $('#suscripcionBtn').removeClass('btn-primary');
+                $('#suscripcionBtn').addClass('btn-outline-success');
+                $('#suscripcionBtn').prop('disabled',false);
             });
-
 
         });
 
