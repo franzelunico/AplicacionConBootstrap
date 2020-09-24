@@ -1,53 +1,56 @@
-@charset "UTF-8";
-/* Variables */
+/* Variables LESS*/
 /* mixin de márgenes, padding y colores */
 .jumbotron {
   background-color: #c4fad0;
   color: black;
-  margin-top: 56px; }
-
+  margin-top: 56px;
+}
 footer {
   padding: 10px 10px 0px 10px;
   background-color: #c4fad0;
   margin-bottom: 0px;
-  margin-top: 10px; }
-
+  margin-top: 10px;
+}
 .card-hotel {
   flex: 1 250px;
-  margin-top: 10px; }
-
+  margin-top: 10px;
+}
 .btn-reserva {
-  width: 100%; }
-
+  width: 100%;
+}
 .footer-addres-icon {
-  padding: 0px 10px 0px 0px; }
-
+  padding: 0px 10px 0px 0px;
+}
 #funciona {
-  background-color: yellow;
-  border-style: groove; }
-
+  background-color: #cc07f3;
+  border-style: groove;
+}
 #reserva {
   background-color: red;
-  border-style: groove; }
-
+  border-style: groove;
+}
 #pago {
   background-color: #c4fad0;
-  border-style: groove; }
-
+  border-style: groove;
+}
 /* md */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .card-columns {
-    column-count: 3; } }
-
+    column-count: 3;
+  }
+}
 /* lg */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .card-columns {
-    column-count: 4; } }
-
+    column-count: 4;
+  }
+}
 /* xl */
 @media (min-width: 1200px) {
   .card-columns {
-    column-count: 4; } }
-
+    column-count: 4;
+  }
+}
 .tab-content {
-  padding-top: 10px; }
+  padding-top: 10px;
+}
