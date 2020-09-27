@@ -13,7 +13,11 @@
     "clean": "rimraf dist",
     "imagemin": "imagemin images/* --out-dir dist/images",
     "usemin": "usemin about.html -d dist --htmlmin -o dist/about.html && usemin contacto.html -d dist --htmlmin -o dist/contacto.html && usemin precios.html -d dist --htmlmin -o dist/precios.html && usemin terminos.html -d dist --htmlmin -o dist/terminos.html && usemin index.html -d dist --htmlmin -o dist/index.html",
-    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.4"
   },
   "repository": {
     "type": "git",
@@ -38,6 +42,8 @@
     "grunt-contrib-uglify": "^5.0.0",
     "grunt-filerev": "^2.3.1",
     "grunt-usemin": "^3.1.1",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
     "htmlmin": "0.0.7",
     "jit-grunt": "^0.10.0",
     "lite-server": "^2.5.4",
