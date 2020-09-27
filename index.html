@@ -6,9 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- Bootstrap CSS-->
+    <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
+     <!-- endbuild -->
 
     <title>Guia de Hoteles </title>
 </head>
@@ -296,44 +298,12 @@
         </div>
     </footer>
     <!--Java script-->
+    <!-- build:js dist/index.js -->
     <script src="./node_modules/jquery/jquery.min.js"></script>
     <script src="./node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <script>
-        $(function(){
-            $('[data-toogle="tooltip"]').tooltip();
-            $('[data-toggle="popover"]').popover();
-            $('.carousel').carousel({
-                interval: 7000
-            });
-
-            // Operaciones en el modal (suscripcion a callbacks)
-            $("#suscripcion").on('show.bs.modal', function (e) {
-                console.log('el modal de suscripcion se esta mostrando');
-                $('#suscripcionBtn').removeClass('btn-outline-success');
-                $('#suscripcionBtn').addClass('btn-primary');
-                $('#suscripcionBtn').prop('disabled',true);
-            });
-
-            $("#suscripcion").on('shown.bs.modal', function (e) {
-                console.log('se mostro el modal de suscripcion');
-            });
-
-            $("#suscripcion").on('hide.bs.modal', function (e) {
-                console.log('el modal de suscripcion se esta oculta');
-            });
-            $("#suscripcion").on('hidden.bs.modal', function (e) {
-                console.log('el modal de suscripcion se oculto');
-                $('#suscripcionBtn').removeClass('btn-primary');
-                $('#suscripcionBtn').addClass('btn-outline-success');
-                $('#suscripcionBtn').prop('disabled',false);
-            });
-
-        });
-
-    </script>
-
+    <script src="js/index.js"></script>
+    <!-- endbuild -->
 </body>
 
 </html>
